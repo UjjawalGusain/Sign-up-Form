@@ -49,6 +49,17 @@ p{
     overflow: hidden;
 }
 
+input{
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px 1px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px blue solid;
+    box-shadow: 3px 2px 3px 3px;
+}
+
 .logo-container{
     display: flex;
     justify-content: center;
@@ -118,14 +129,14 @@ fieldset{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
-    flex-wrap: wrap-reverse;
-    gap: 6rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .top-field{
     min-height: 30vh;
     background-color:rgba(245, 247, 243, 0.829);
-    padding: 4rem 3rem 3rem 3rem;
+    padding: 3rem 2rem 2rem 2rem;
 }
 
 .form-field{
@@ -159,6 +170,6 @@ button:hover{
 
 button+div{
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: quoteFont;
 }
