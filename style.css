@@ -51,15 +51,14 @@ p{
 
 input{
     border-radius: 5px;
-    border: 0.1px rgb(0, 0, 0) solid;
+    /* border: 0.1px rgb(0, 0, 0) solid; */
     /* box-shadow: 1.5px 1px 0.3px 1px; */
     outline: none;
 }
 
-input:focus{
+input:focus, #pwd.error:focus, #confirm-pwd.error:focus{
     outline: none;
-    border: 1px blue solid;
-    box-shadow: 1px 1px 4px 1px grey;
+    border: 3px black solid;
 }
 
 .logo-container{
@@ -178,5 +177,19 @@ button+div{
 
 #pwd.error, #confirm-pwd.error{
     border: 1px red solid;
-    box-shadow: 1px 1px 2px 1px 5px black ;
+}
+
+.not-match{
+    font-size: 14px;
+    font-weight: 100;
+    color: red;
+}
+
+input:valid{
+    background-color: white;
+}
+
+input:invalid{
+    border: none;
+    box-shadow: 1px 1px 1px 1px red;
 }
