@@ -1,0 +1,148 @@
+@font-face {
+    font-family:myFont;
+    src: url(Fonts/Roboto-MediumItalic.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(Fonts/Norse-Bold.otf);
+}
+
+:root{
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+section{
+    display: flex;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: white;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.image-container{
+    min-width: 40vw;
+    min-height: 100vh;
+    background: url(img/man-sitting-on-riverside.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    background-color: black ;
+    opacity: 40%;
+    min-width: 45vw;
+    min-height: 13vh;
+    box-shadow: 2px 2px 5px 5px;
+}
+
+.odin-logo{
+    max-height: 140px;
+    min-width: 120px;
+}
+
+.odinson{
+    font-family: logoFont;
+    color: white;
+    font-size: 140px;
+}
+
+
+form{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: hidden;
+    overflow: auto;
+}
+
+.form-details>div>div{
+    font-family: myFont;
+    font-size: 18px;
+    color: black;
+}
+
+.form-container{
+    max-width: 60vw;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+
+.form-details>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    flex-wrap: wrap-reverse;
+    gap: 6rem;
+}
+
+.top-field{
+    min-height: 30vh;
+    background-color:rgba(245, 247, 243, 0.829);
+    padding: 4rem 3rem 3rem 3rem;
+}
+
+.form-field{
+    align-items: flex-start;
+    box-shadow: 3px 3px 2px 1px rgba(136, 138, 134, 0.829);
+    padding: 0 1rem;
+    overflow: auto;    
+}
+
+fieldset.signup-field{
+    min-height: 25vh;
+    align-items: flex-start
+}
+
+button{
+    border-radius: 8px;
+    padding: 1em 2em;
+    margin: 1rem 0 0;
+    font-size: 1rem;
+    font-family:fantasy;
+    background-color: #596d48;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 1px 1px blur black;
+    transition: scale 0.9ms;
+}
+
+button:hover{
+    transform: scale(1.07);
+}
+
+button+div{
+    font-size: 2rem;
+    font-family: myFont;
+}
